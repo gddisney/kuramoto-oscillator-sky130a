@@ -1,0 +1,37 @@
+{
+  "DESIGN_NAME": "jev_kuramoto",
+  "VERILOG_FILES": [
+    "dir::src/jev_kuramoto.v"
+  ],
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 25,
+  "FP_CORE_UTIL": 30,
+  "RUN_POST_GRT_RESIZER_TIMING": true,
+  "RUN_POST_GRT_DESIGN_REPAIR": true,
+  "EXTRA_EXCLUDED_CELLS": [
+    "sky130_fd_sc_hd__clkdlybuf4s*"
+  ],
+  "DESIGN_REPAIR_MAX_SLEW_PCT": 30,
+  "GRT_DESIGN_REPAIR_MAX_SLEW_PCT": 30,
+  "DESIGN_REPAIR_MAX_CAP_PCT": 25,
+  "GRT_DESIGN_REPAIR_MAX_CAP_PCT": 20,
+  "CTS_SINK_CLUSTERING_SIZE": 10,
+  "TIMING_VIOLATION_CORNERS": [
+    "*"
+  ],
+  "MAX_SLEW_VIOLATION_CORNERS": [
+    "*"
+  ],
+  "MAX_CAP_VIOLATION_CORNERS": [
+    "*"
+  ],
+  "PNR_CORNERS": [
+    "max_ss_100C_1v60"
+  ],
+  "RSZ_CORNERS": [
+    "max_ss_100C_1v60",
+    "min_ff_n40C_1v95"
+  ],
+  "DESIGN_REPAIR_MAX_WIRE_LENGTH": 120,
+  "GRT_DESIGN_REPAIR_MAX_WIRE_LENGTH": 120
+}
