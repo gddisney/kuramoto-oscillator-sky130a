@@ -1,0 +1,51 @@
+# Tiny Tapeout project information
+project:
+  title:        "Kuramoto Fault-Tolerant Clock"
+  author:       "Gregory Disney"
+  discord:      ""
+  description:  "Four coupled digital phase oscillators that vote, drop faulty nodes, and output a fault-tolerant clock tick"
+  language:     "Verilog"
+  clock_hz:     10000000
+
+  # How many tiles your design occupies? A single tile is about 167x108 uM.
+  tiles: "6x2"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
+
+  top_module:  "tt_um_gddisney_kuramoto"
+
+  source_files:
+    - "project.v"
+    - "jev_kuramoto.v"
+
+pinout:
+  # Inputs
+  ui[0]: "src0"
+  ui[1]: "src1"
+  ui[2]: "src2"
+  ui[3]: "src3"
+  ui[4]: "src_en0"
+  ui[5]: "src_en1"
+  ui[6]: "src_en2"
+  ui[7]: "src_en3"
+
+  # Outputs (byte chosen by sel[3:0])
+  uo[0]: "data0"
+  uo[1]: "data1"
+  uo[2]: "data2"
+  uo[3]: "data3"
+  uo[4]: "data4"
+  uo[5]: "data5"
+  uo[6]: "data6"
+  uo[7]: "data7"
+
+  # Bidirectional pins
+  uio[0]: "omega_sdata"
+  uio[1]: "omega_shift"
+  uio[2]: "omega_load"
+  uio[3]: "sel0"
+  uio[4]: "sel1"
+  uio[5]: "sel2"
+  uio[6]: "sel3"
+  uio[7]: "ec_tick"
+
+# Do not change!
+yaml_version: 6
