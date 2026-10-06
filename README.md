@@ -45,6 +45,8 @@
 | `status` | out | 4 | Status word |
 | `VPWR`, `VGND` | inout | 1 | Only when `USE_POWER_PINS` is defined |
 
+<img width="2400" height="2500" alt="image" src="https://github.com/user-attachments/assets/3e87b4c5-d055-4208-ad92-d122f773ebaa" />
+
 
 ## How it works
 
